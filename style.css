@@ -7,7 +7,7 @@ body {
 p {
 	text-align: left;
 }
-p.underTitle {
+#underTitle {
 	text-align: center;
 	font-size: 12pt;
 	
