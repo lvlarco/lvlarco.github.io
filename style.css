@@ -1,4 +1,12 @@
+head {
+	text-align: center
+}
+
+
 body {
 	background-color: rgb(244, 191, 66);
 	font-family: "Calibri", Arial, Cambria;
+}
+p {
+	text-align: left
 }
