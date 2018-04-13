@@ -1,14 +1,14 @@
 
 body {
-	background-color: rgb(244, 191, 66);
+	background-color: rgb(250, 235, 215);
 	font-family: calibri;
 	text-align: center;
 }
 p {
 	text-align: left;
 }
-p.underTitle {
+#underTitle {
 	text-align: center;
-	font-size: 12pt;
+	font-size: 15pt;
 	
 }
