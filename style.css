@@ -21,3 +21,22 @@ h3 {
 	font-size: 15pt;
 	
 }
+a:link {
+	color: gray;
+    text-decoration: none;
+}
+
+a:visited {
+	color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+	color: blue;
+    text-decoration: underline;
+}
+
+a:active {
+	color: red;
+    text-decoration: underline;
+}
