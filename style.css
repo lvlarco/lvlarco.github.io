@@ -54,7 +54,10 @@ a:active {
 	transition: .5s ease;
 	background-color: #008CBA;
 }
-
+.container {
+  position: relative;
+  width: 50%;
+}
 .container:hover .overlay {
 	opacity: 1;
 }
