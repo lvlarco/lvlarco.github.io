@@ -42,8 +42,8 @@ a:active {
 	height: 240px;
 }
 .container {
-  position: relative;
-  width: 100%;
+	position: relative;
+	width: 100%;
 }
 .overlay {
 	position: absolute;
