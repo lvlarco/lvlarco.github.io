@@ -38,9 +38,8 @@ a:active {
 	text-decoration: none;
 }
 .image {
-	display: block;
-	width: 240px;
-	height: 240px;
+	display: inline-block;
+	width: 100%;
 }
 .container {
   position: relative;
