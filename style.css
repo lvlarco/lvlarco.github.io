@@ -19,24 +19,12 @@ h3 {
 #underTitle {
 	text-align: center;
 	font-size: 15pt;
-	
 }
 a:link {
-	color: gray;
-    text-decoration: none;
+	color: blue;
+	text-decoration: none;
 }
-
 a:visited {
 	color: purple;
-    text-decoration: none;
-}
-
-a:hover {
-	color: blue;
-    text-decoration: underline;
-}
-
-a:active {
-	color: red;
-    text-decoration: underline;
+	text-decoration: none;
 }
