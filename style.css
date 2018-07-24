@@ -42,7 +42,7 @@ a:active {
 	height: 240px;
 }
 .container {
-	display: inline;
+	display: inline-block;
 	position: relative;
 	width: 100%;
 	height: 100%;
