@@ -39,8 +39,8 @@ a:active {
 }
 .image {
 	display: block;
-	width: 100%;
-	height: auto;
+	width: 240px;
+	height: 240px;
 }
 .overlay {
 	position: absolute;
