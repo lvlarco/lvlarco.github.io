@@ -37,6 +37,11 @@ a:active {
 	color: hotpink;
 	text-decoration: none;
 }
+.container {
+  position: relative;
+  width: 50%;
+  height: 240px;
+}
 .image {
 	display: block;
 	width: 240px;
@@ -53,10 +58,6 @@ a:active {
 	opacity: 0;
 	transition: .5s ease;
 	background-color: #008CBA;
-}
-.container {
-  position: relative;
-  width: 50%;
 }
 .container:hover .overlay {
 	opacity: 0.5;
