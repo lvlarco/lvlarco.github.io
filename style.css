@@ -1,6 +1,6 @@
 
 body {
-	background-color: rgb(240, 240, 230);
+	background-color: white;
 	font-family: calibri;
 }
 p {
@@ -75,7 +75,7 @@ a:active {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .topnav a:hover {
@@ -84,7 +84,7 @@ a:active {
 }
 
 .topnav a.active {
-  background-color: white;
+  background-color: #ddd;
   color: rgb(13, 26, 82);
 }
 /*.text {
