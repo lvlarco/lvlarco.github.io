@@ -1,6 +1,6 @@
 
 body {
-	background-color: rgb(240, 240, 230);
+	background-color: white;
 	font-family: calibri;
 }
 p {
@@ -63,6 +63,29 @@ a:active {
 
 .image:hover{
 	opacity: 0.5;
+}
+.topnav {
+	overflow: hidden;
+	background-color: rgb(13, 26, 82);
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 20px 22px;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: rgb(191, 194, 207);
+	color: rgb(13, 26, 82);
 }
 /*.text {
 	color: white;
