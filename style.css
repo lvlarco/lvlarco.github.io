@@ -64,6 +64,29 @@ a:active {
 .image:hover{
 	opacity: 0.5;
 }
+.topnav {
+  overflow: hidden;
+  background-color: rgb(13, 26, 82);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: rgb(13, 26, 82);
+}
 /*.text {
 	color: white;
 	font-size: 20px;
