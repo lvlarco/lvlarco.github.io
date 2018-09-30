@@ -3,19 +3,26 @@ body {
 	background-color: white;
 	font-family: calibri;
 	margin: 0;
+	font-size: 16pt;
 }
 .home_container {
 	background-position: left top;
-	background-image: url('./assets/CAM00359.jpg');
+	background-image: url('./assets/uyuni.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+#home_name {
+	font-size: 35pt;
+	color: white;
+	text-align: center;
 }
 p {
 	text-align: left;
 }
 
 h1 {
-	text-align: center;
+	font-size: 28pt;
+	text-align: left;
 	margin: 0;
 }
 h2 {
@@ -24,9 +31,13 @@ h2 {
 h3 {
 	text-align: left;
 }
-#underTitle {
+#under_title {
 	text-align: center;
-	font-size: 15pt;
+	font-size: 17pt;
+}
+#location {
+	text-align: right;
+	font-size: 13pt;
 }
 a:link {
 	color: blue;
@@ -81,7 +92,7 @@ a:active {
 	float: left;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 18px 24px;
+	padding: 18px 26px;
 	text-decoration: none;
 	font-size: 24px;
 }
