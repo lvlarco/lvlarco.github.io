@@ -2,6 +2,13 @@
 body {
 	background-color: white;
 	font-family: calibri;
+	margin: 0;
+}
+.home_container {
+	background-position: left top;
+	background-image: url('./assets/CAM00359.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 p {
 	text-align: left;
@@ -9,6 +16,7 @@ p {
 
 h1 {
 	text-align: center;
+	margin: 0;
 }
 h2 {
 	text-align: left;
@@ -73,13 +81,13 @@ a:active {
 	float: left;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 20px 22px;
+	padding: 18px 24px;
 	text-decoration: none;
 	font-size: 24px;
 }
 
 .topnav a:hover {
-	background-color: #ddd;
+	background-color: white;
 	color: black;
 }
 
@@ -87,14 +95,3 @@ a:active {
 	background-color: rgb(191, 194, 207);
 	color: rgb(13, 26, 82);
 }
-/*.text {
-	color: white;
-	font-size: 20px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-}*/
