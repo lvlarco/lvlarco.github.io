@@ -24,7 +24,7 @@ body {
 	float: left;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 18px 26px;
+	padding: 18px 30px;
 	text-decoration: none;
 	font-size: 24px;
 }
@@ -85,12 +85,22 @@ a:active {
 	display: inline;
 	position: relative;
 }
-
 .image {
 	width: 240px;
 	height: 240px;
 }
-
+.image:hover {
+	opacity: 0.5;
+}
+.proj_container {
+	position: relative;
+	width: 624px;
+	height: 350px;
+}
+.proj_img {
+	width: auto;
+	height: 350px;
+}
 .overlay {
 	position: absolute;
 	top: 0;
@@ -100,9 +110,17 @@ a:active {
 	height: 100%;
 	width: 100%;
 	opacity: 0;
-	transition: .5s ease;
-	background-color: #008CBA;
+	transition: .3s ease;
+	background-color: rgb(13, 26, 82);
 }
-.image:hover{
-	opacity: 0.5;
+.proj_container:hover .overlay{
+	opacity: 0.8;
+}
+.overlay_text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 8%;
+	left: 8%;
+	text-align: left;
 }
