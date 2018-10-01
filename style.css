@@ -16,6 +16,9 @@ body {
 	color: white;
 	text-align: center;
 }
+#bottom_padding{
+	padding-bottom: 20px;
+}
 .topnav {
 	overflow: hidden;
 	background-color: rgb(13, 26, 82);
@@ -93,8 +96,9 @@ a:active {
 	opacity: 0.5;
 }
 .proj_container {
+	display: inline-block;
 	position: relative;
-	width: 624px;
+	width: 350px;
 	height: 350px;
 }
 .proj_img {
