@@ -1,7 +1,6 @@
-
 body {
 	background-color: white;
-	font-family: calibri;
+	font-family: tahoma;
 	margin: 0;
 	font-size: 15pt;
 }
@@ -12,9 +11,13 @@ body {
 	background-repeat: no-repeat;
 }
 #home_name {
-	font-size: 35pt;
+	font-size: 32pt;
 	color: white;
 	text-align: center;
+}
+#under_title {
+	text-align: center;
+	font-size: 15pt;
 }
 #bottom_padding{
 	padding-bottom: 20px;
@@ -27,7 +30,7 @@ body {
 	float: left;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 18px 30px;
+	padding: 18px 40px;
 	text-decoration: none;
 	font-size: 24px;
 }
@@ -48,7 +51,7 @@ p {
 }
 
 h1 {
-	font-size: 28pt;
+	font-size: 24pt;
 	text-align: left;
 	margin: 0;
 }
@@ -57,10 +60,6 @@ h2 {
 }
 h3 {
 	text-align: left;
-}
-#under_title {
-	text-align: center;
-	font-size: 17pt;
 }
 #location {
 	text-align: right;
