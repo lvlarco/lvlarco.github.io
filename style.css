@@ -22,30 +22,6 @@ body {
 #bottom_padding{
 	padding-bottom: 20px;
 }
-.topnav {
-	overflow: hidden;
-	background-color: rgb(13, 26, 82);
-}
-.topnav a {
-	float: left;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 18px 40px;
-	text-decoration: none;
-	font-size: 24px;
-}
-.topnav a:hover {
-	background-color: white;
-	color: black;
-}
-.topnav a:visited {
-	background-color: rgb(13, 26, 82);
-	color: #f2f2f2;
-}
-.topnav a.active {
-	background-color: rgb(191, 194, 207);
-	color: rgb(13, 26, 82);
-}
 p {
 	text-align: left;
 }
@@ -126,4 +102,28 @@ a:active {
 	top: 8%;
 	left: 8%;
 	text-align: left;
+}
+.topnav {
+	overflow: hidden;
+	background-color: rgb(13, 26, 82);
+}
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 18px 40px;
+	text-decoration: none;
+	font-size: 24px;
+}
+.topnav a:hover {
+	background-color: white;
+	color: black;
+}
+.topnav a:visited {
+	background-color: rgb(13, 26, 82);
+	color: #f2f2f2;
+}
+.topnav a.active {
+	background-color: rgb(191, 194, 207);
+	color: rgb(13, 26, 82);
 }
