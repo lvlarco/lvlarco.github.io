@@ -1,4 +1,4 @@
-Hike,Date,Time,Altimeter,Accuracy,Altitude [m],Time [hh:mm],Corrected Altitude [ft],Elevation Gain [ft]
+hike,date,time,altimeter,accuracy,altitude,time_h_m,corrected_altitude,elevation_gain
 Blood Mountain,4/11/2018,11:58:29,GPS,Accurate,925.6,00:00:00,3036.7,0
 Blood Mountain,4/11/2018,12:05:06,GPS,Accurate,935.4,00:06:37,3068.9,32.2
 Blood Mountain,4/11/2018,12:08:24,GPS,Accurate,952.6,00:09:55,3125.3,88.6
