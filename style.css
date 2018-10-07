@@ -127,3 +127,7 @@ a:active {
 	background-color: rgb(191, 194, 207);
 	color: rgb(13, 26, 82);
 }
+
+.plotly a:hover {
+	background-color: transparent;
+}
