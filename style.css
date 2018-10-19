@@ -138,6 +138,15 @@ a:active {
 	right: 7%;
 	text-align: left;
 }
+.overlay_text_mvp {
+	color: white;
+	font-size: 20pt;
+	position: absolute;
+	top: 40%;
+	left: 7%;
+	right: 7%;
+	text-align: center;
+}
 .topnav {
 	overflow: hidden;
 	background-color: rgb(13, 26, 82);
