@@ -1,17 +1,15 @@
-body {
+body, html {
 	background-color: white;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	margin: 0;
 	font-size: 14pt;
+	height: 100%;
 }
 .home_container {
 	background-position: left top;
 	background-image: url('./assets/uyuni.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-}
-body, html {
-    height: 100%;
 }
 .parallax {
     background-image: url('./assets/uyuni.jpg');
@@ -47,17 +45,35 @@ p {
 h1 {
 	font-size: 24pt;
 	text-align: left;
-	margin: 0;
+	margin: 0px 0px 40px 0px;
+	color: #393939;
 }
 h2 {
 	text-align: left;
+	font-size: 19pt;
+	color: #FF5A09;
 }
 h3 {
 	text-align: left;
+	font-size: 17pt;
+	color: #e36815;
+}
+h4 {
+	text-align: left;
+	color: #be4f0c;
 }
 #location {
 	text-align: right;
 	font-size: 12pt;
+}
+#location a:link{
+	color: black;
+}
+#location a:visited{
+	color: black;
+}
+#location a:hover{
+	color: white;
 }
 a:link {
 	color: blue;
@@ -156,4 +172,8 @@ a:active {
 .connect_img {
 	height: 65px;
 	width: auto;
+}
+.educ_split {
+	width: 35%;
+	float: left;
 }
