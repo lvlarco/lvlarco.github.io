@@ -22,13 +22,22 @@ body, html {
     background-size: cover;
 }
 #home_name {
-	font-size: 32pt;
+	margin: auto;
+	width: 75%;
+	padding-top:2%;
 	color: white;
 	text-align: center;
+	font-size: 32pt;
+	background-color:rgba(0,0,0,0.1);
 }
 #under_title {
+	margin: auto;
 	text-align: center;
 	font-size: 15pt;
+	color: white;
+	width: 75%;
+	background-color:rgba(0,0,0,0.1);
+	padding-bottom:3%;
 }
 #bottom_padding{
 	padding-bottom: 20px;
