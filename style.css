@@ -146,3 +146,14 @@ a:active {
 	background-color: rgb(191, 194, 207);
 	color: rgb(13, 26, 82);
 }
+.connect_container {
+	display: inline-block;
+	position: relative;
+}
+.connect_container a:hover {
+	background-color: transparent;
+}
+.connect_img {
+	height: 65px;
+	width: auto;
+}
