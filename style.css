@@ -10,6 +10,17 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+body, html {
+    height: 100%;
+}
+.parallax {
+    background-image: url('./assets/uyuni.jpg');
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #home_name {
 	font-size: 32pt;
 	color: white;
@@ -115,13 +126,13 @@ a:active {
 	text-decoration: none;
 	font-size: 24px;
 }
-.topnav a:hover {
-	background-color: white;
-	color: black;
-}
 .topnav a:visited {
 	background-color: rgb(13, 26, 82);
 	color: #f2f2f2;
+}
+.topnav a:hover {
+	background-color: white;
+	color: black;
 }
 .topnav a.active {
 	background-color: rgb(191, 194, 207);
