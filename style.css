@@ -27,8 +27,7 @@ body, html {
 	padding-top:2%;
 	color: white;
 	text-align: center;
-	font-size: 32pt;
-	background-color:rgba(0,0,0,0.1);
+	font-size: 30pt;
 }
 #under_title {
 	margin: auto;
@@ -36,7 +35,6 @@ body, html {
 	font-size: 15pt;
 	color: white;
 	width: 75%;
-	background-color:rgba(0,0,0,0.1);
 	padding-bottom:3%;
 }
 #bottom_padding{
@@ -119,8 +117,9 @@ a:active {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 8%;
-	left: 8%;
+	top: 7%;
+	left: 7%;
+	right: 7%;
 	text-align: left;
 }
 .topnav {
