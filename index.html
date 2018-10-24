@@ -6,42 +6,114 @@
 	<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-	<div class="topnav">
+	<!--<div class="topnav">
 		<a class="active" href="./index.html">home</a>
 		<a href="./projects.html">projects</a>
 		<a href="./contact.html">contact</a>
-	</div>
+	</div>-->
 	<div class="parallax">
 		<div style="padding-top:11%; padding-bottom:8%">
-			<h1 id="home_name">hey, I am Marco</h1><br>
+			<h1 id="home_name">hey, I am Marco</h1><br><br>
 			<p id="under_title">
 			<br>
 			...and welcome to my site!<br>
 			I am a mechanical engineer and I love challenges.<br>
 			This site is another one; this time to learn HTML5 and CSS.<br>
 			I am a mechatronics enthusiast: <br>
-			I integrate CAD, 3D printing and Python into cool side projects.<br>
-			Check'em out!</p>
+			I integrate CAD, 3D printing and Python into unique side projects.</p>
 		</div>
-		<div style="padding-bottom:5px; padding-right: 2%">
+		<div style="padding-bottom:1%; padding-right: 2%">
 			<p id="location"><em>Photo location: <a href="https://www.google.com/search?q=uyuni+bolivia&hl=en&authuser=0&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwjf0YuXsJPeAhUZA4gKHV5ACTMQ_AUIDygC&biw=1366&bih=657">
 			Uyuni, Bolivia</em></a></p>
 		</div>
+		<div class="arrow">
+			<div class="chevron"></div>
+			<div class="chevron"></div>
+			<div class="chevron"></div>
+		</div>
 	</div>
-	<div style="background-color:white; font-size:14pt; padding-top:2%; padding-left:10%; 
+	<div style="background-color:white; padding-top:2%; padding-left:10%; 
 	padding-right:10%; padding-bottom:4%">
 		<h2>about_me</h2>
 		I was born in Peru and I have lived half my life in the States. I consider myself 
 		a good mix.<br>
 		I am bilingual, fluent in both English and Spanish.
 		<h3>my_studies</h3>
-		<div class="educ_split">Georgia Tech <div style="font-size:11pt"><em>go jackets!</em></div></div>
+		<div class="educ_split">Georgia Tech <div style="font-size:11pt"><em>go jackets!</em></div><br>
+		University of Michigan
+		<div style="font-size:11pt"><em>go blue!</em></div></div>
 		Masters in Mechanical Engineering<br>
-		May '17<br>
-		<div class="educ_split">University of Michigan <div style="font-size:11pt"><em>go blue!</em></div></div>
+		May '17<br><br>
 		Bachelors in Mechanical Engineering<br>
 		December '13
 	</div>
-	<!––<div class="parallax"></div>
+	<div class="second_back">
+		<div style="padding-top:1%; padding-left:10%; padding-right:10%; padding-bottom:0%">
+			<div class="second_text" style="width:65%; padding-top:0%; padding-right:1%; padding-bottom:1%;
+			padding-left:1%">
+				<h2>my_projects</h2>
+				Tech-oriented.<br>
+				I like 3D printing, CAD design, electronics and microcontrollers -- 
+				I combine them all<br>
+			</div><br>
+			<div class="proj_container">
+				<img src="./assets/rc_car.jpg" alt="RC Car MVP2" class="proj_img">
+				<a href="./projects/rc_car/rc_car.html">
+					<div class= "overlay">
+						<div class="overlay_text">Remote Control Car<br>
+						Building an RC car controlled via bluetooth from my phone
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="proj_container">
+				<img src="./assets/yoda_front.jpg" alt="Yoda Rubik's Cube" class="proj_img">
+				<a href="./projects/yoda_rubiks_cube/yoda.html">
+					<div class= "overlay">
+						<div class="overlay_text">Yoda Rubik's Cube<br>
+						3D printed a fully-functioning rubik's cube in the form of Yoda
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="proj_container">
+				<img src="./assets/hikes.jpg" alt="Hikes" class="proj_img">
+				<a href="./projects/hikes/hikes.html">
+					<div class= "overlay">
+						<div class="overlay_text">Hikes<br>
+						Data visualization for my recorded hikes using Pandas, Plotly and Fitbit API
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="proj_container">
+				<img src="./assets/polynomial_fit.PNG" alt="Polynomial Fit" class="proj_img">
+				<a href="./projects/polynomial_fit/polynomial_fit.html">
+					<div class= "overlay">
+						<div class="overlay_text">Polynomial Fit<br>
+						 Predict the displacement of a material sample using a polynomial least square fit. Written in Matlab
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div style="padding-top:1%; padding-bottom:5px; padding-right: 2%">
+			<p id="location"><em>Photo location: <a href="https://www.google.com/search?biw=1440&bih=789&tbm=isch&sa=1&ei=aLzPW-icIJKisAXU9YywBQ&q=cappadocia+turkey&oq=cappadocia+turkey&gs_l=img.3...0.0..5799720...0.0..0.0.0.......1......gws-wiz-img.ddOMVLv1vmc">
+			Cappadocia, Turkey</em></a></p>
+		</div>
+	</div>
+	<div style="background-color:white; padding-top:2%; padding-left:10%; 
+	padding-right:10%; padding-bottom:4%">
+		<h2>how_to_reach_me</h2><br>
+		<div class="connect_container">
+			<a href="https://www.linkedin.com/in/lvlarco/">
+			<img src="./assets/In-2C-66px-R.png" alt="LinkedIn" class="connect_img" style="vertical-align:middle">
+			</a>Connect with me<br><br>
+			<a href="https://github.com/lvlarco//">
+			<img src="./assets/GitHub-Mark-64px.png" alt="Github" class="connect_img" style="vertical-align:middle; padding-right:12px">
+			</a>Check out my repos
+		</div>
+	</div>
+	<!-<div class="parallax"></div>
 </body>
 </html>
