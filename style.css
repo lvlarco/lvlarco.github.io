@@ -122,12 +122,12 @@ a:active {
 .proj_container {
 	display: inline-block;
 	position: relative;
-	width: 280px;
-	height: 280px;
+	width: 250px;
+	height: 250px;
 }
 .proj_img {
 	width: auto;
-	height: 280px;
+	height: 250px;
 }
 .overlay {
 	position: absolute;
