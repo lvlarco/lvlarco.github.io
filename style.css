@@ -20,7 +20,7 @@ body, html {
     background-size: cover;
 }
 .second_back {
-	background-image: url('./assets/cappadocia.jpg');
+	background-image: url('./assets/orlando.jpg');
     height: 100%; 
     background-attachment: fixed;
     background-position: center;
@@ -29,8 +29,8 @@ body, html {
 }
 .second_text {
 	text-align: left;
-	color: black;
-	background-color: rgba(255,255,255,0.2);
+	color: white;
+	/*background-color: rgba(255,255,255,0.2);*/
 	/*background-color: rgba(102,98,98,0.3);*/
 }
 #home_name {
@@ -54,22 +54,23 @@ body, html {
 }
 p {
 	text-align: left;
+	line-height: 1.4em;
 }
 
 h1 {
-	font-size: 24pt;
+	font-size: 26pt;
 	text-align: left;
 	margin: 0px 0px 40px 0px;
 	color: #393939;
 }
 h2 {
 	text-align: left;
-	font-size: 19pt;
+	font-size: 20pt;
 	color: #FF5A09;
 }
 h3 {
 	text-align: left;
-	font-size: 17pt;
+	font-size: 14pt;
 	color: #e36815;
 }
 h4 {
@@ -88,6 +89,12 @@ h4 {
 	color: white;
 }
 #location a:hover{
+	color: white;
+}
+#location_black {
+	color: black;
+}
+#location_black:hover{
 	color: white;
 }
 a:link {

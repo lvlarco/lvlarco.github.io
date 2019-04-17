@@ -3,6 +3,7 @@
 <head>
 	<title>Hikes</title>
 	<link rel="stylesheet" href="../../style.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
 	<div class="topnav">
@@ -11,35 +12,78 @@
 		<a href="../../contact.html">contact</a>
 	</div>
 	<div style="padding-top:3%; padding-left:10%; padding-right:10%; padding-bottom:2%">
-		<h1>hikes</h1>
+		<h1>hikes_visualization</h1>
 		
-		<h3><em>insert here some bs wanderlust inspirational quote</em></h3>
-		<p>For the last couple of years, I have been recording my hikes around the country.
-		My goal is to combine SQL API data access, data manipulation using Pandas, and 
-		Plotly graphing tools.<br>
+		<h3><em>"insert here some bs wanderlust inspirational quote"</em></h3>
+		<p>For the last few years, I have been recording different parameters for the hikes I've done
+			around the world. I want to pair this data along my Fitbit's API to visualize my body data
+			while hiking.<br>
+			The goal is to learn API data access using the Python Request package, data manipulation with
+			Pandas, and Plotly graphing tools.
+		</p>
 		
 		<h2>necessary_skills</h2>
-		<ul>
-			<li>#python</li>
-			<li>#pandas</li>
-			<li>#datavisualization</li>
-			<li>#API</li>
-			<li>#plotly</li>
-			<li>#jupyternotebook</li>
+		<ul class="fa-ul">
+			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>python</li>
+			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>pandas</li>
+			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>datavisualization</li>
+			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>API</li>
+			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>plotly</li>
+			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>jupyternotebook</li>
 		</ul>
-		
+
+		<h2>accessing_data</h2>
+		I'll be gathering and combining the data from two apps:
+			<ol>
+				<li><a href="https://play.google.com/store/apps/details?id=com.arlabsmobile.altimeterfree&hl=en_US">
+					Accurate Altimeter</a></li>
+				<li><a href="https://play.google.com/store/apps/details?id=com.fitbit.FitbitMobile&hl=en_US">
+					Fitbit App</a></li>
+			</ol>
+
+		<h3>accurate_altimeter</h3>
+		<p>This is a pretty good app that allows to measure your current altitude at any moment. It has the capability
+			to record continuously at different time steps. You can also set the triangulization method to derive your
+			altitude from the internet or use your phone's GPS instead. This is really helpful for those remote hikes where
+			internet is spotty.<br>
+			However, my favorite feature is the ability to export your history to a CSV and the compatibilty to Google
+			Drive. This is my main method to obtain the data without requiring to access the app's API.
+		</p>
+
+		<h3>fitbit_app</h3>
+		<p>Obtaining data from Fitbit is trickier. There is an option to download a CSV file from Fitbit's
+			online account, but the file contains only a mere summary. Instead, their
+		<a href="https://dev.fitbit.com/build/reference/web-api/activity/#activity-time-series"><em>intraday time series</em></a>
+			boasts a lot more options, allowing to extract data at different time steps for a wider category
+			of activities. To do so, we'll need to access Fitbit's API.</p>
+		I've separated this walkthrough in 3 main steps:
+		<ol>
+			<li>Creating and registering an application</li>
+		<p>First, Fitbit requires to create and register an application on their developer's site.
+			This can be done by simply filling out the application on this <a href="https://dev.fitbit.com/apps/new"> link</a>.
+			Make sure you select "Personal" under the "OAuth2.0 Application Type" field. This allows to request any
+			intraday time series without any additional access approvals. However, by selecting this field, your
+			application will be limited to pulling personal data only.
+		</p>
+			<li>Authentication</li>
+		<p>Fitbit has upgraded their authentication requirements to OAuth2.0 only. Their <a href="https://dev.fitbit.com/build/reference/web-api/oauth2/">
+			website</a> has amazing documentation explaining both types of authentication flows you can obtain.
+			I decided to use the "Authorization Code Flow" and my initial code was based on this thorough
+			<a href="http://pdwhomeautomation.blogspot.com/2016/01/fitbit-api-access-using-oauth20-and.html">post</a>
+			by Paul's Geek Dad Blog.<br>
+			However, I found his authorization code request a bit restrictive, thus I refactored using Python's
+			<a href="http://docs.python-requests.org/en/master/"><em>Requests</em></a> package instead.
+		</ol>
+
+		</p>
+
 		Check all my graphs and data in  <a href="https://plot.ly/~lvlarco">here</a>.<br>
 		All my graphs are interactive! You can hide each hike by clicking on it or double-click 
-		on one to select it.</p>
+		on one to select it.
 	</div>
 	<div class="plotly" align="center">
-    	<iframe src="//plot.ly/~lvlarco/77.embed" 
+    	<iframe src="//plot.ly/~lvlarco/88.embed"
     	width="950" height="500" frameborder="0" scrolling="no"></iframe>
-	</div>
-	<div style="padding-top:2%; padding-left:10%; padding-right:10%; padding-bottom:2%">
-		<p>My next step is to connect Fitbit's API with these hikes and correlate them to my activity parameters such 
-		as steps, heart rate and calories burnt.
-		It will be a tough one.</p>
 	</div>
 </body>
 </html>
