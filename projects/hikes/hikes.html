@@ -11,7 +11,7 @@
 		<a class="active" href="../../projects.html">projects</a>
 		<a href="../../contact.html">contact</a>
 	</div>
-	<div style="padding-top:4%; padding-left:20%; padding-right:20%; padding-bottom:4%">
+	<div style="padding-top:4%; padding-left:20%; padding-right:20%; padding-bottom:10%">
 		<h1>hikes_visualization</h1>
 		
 		<h3><em>"...insert here some bs wanderlust inspirational quote..."</em></h3>
@@ -24,10 +24,12 @@
 		
 		<h2>necessary_skills</h2>
 		<ul class="fa-ul">
+			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>HTTPRequests</li>
+			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>OAuth2.0</li>
 			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>python</li>
 			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>pandas</li>
-			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>datavisualization</li>
 			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>API</li>
+			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>datavisualization</li>
 			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>plotly</li>
 			<li><span class="fa-li" ><i class="fa fa-hashtag"></i></span>jupyternotebook</li>
 		</ul>
@@ -43,11 +45,11 @@
 
 		<h3>accurate_altimeter</h3>
 		<p>This is a pretty good app that allows to measure your current altitude at any moment. It has the capability
-			to record continuously at different time steps. You can also set the triangulization method to derive your
+			to record continuously and set them up at different time steps. You can also set the triangulization method to derive your
 			altitude from the internet or use your phone's GPS instead. This is really helpful for those remote hikes where
 			internet is spotty.<br>
-			However, my favorite feature is the ability to export your history to a CSV and the compatibilty to Google
-			Drive. This is my main method to obtain the data without requiring to access the app's API.
+			However, my favorite feature is the ability to export your history to a CSV and its compatibilty with Google
+			Drive. This is my main method to download the data without requiring to access the app's API.
 		</p>
 
 		<h3>fitbit_app</h3>
@@ -56,7 +58,7 @@
 		<a href="https://dev.fitbit.com/build/reference/web-api/activity/#activity-time-series"><em>intraday time series</em></a>
 			boasts a lot more options, allowing to extract data at different time steps for a wider category
 			of activities. To do so, we'll need to access Fitbit's API.</p>
-		I've separated this walkthrough in 3 main steps:
+		I've split this walkthrough in 3 main steps:
 		<ol>
 			<li>Creating and registering an application</li>
 		<p>First, Fitbit requires to create and register an application on their developer's site.
@@ -65,7 +67,7 @@
 			intraday time series without any additional access approvals. However, by selecting this field, your
 			application will be limited to pulling personal data only.
 		</p>
-			<li>Authentication</li>
+			<li>Authentication and authorization token</li>
 		<p>Fitbit has upgraded their authentication requirements to OAuth2.0 only. Their <a href="https://dev.fitbit.com/build/reference/web-api/oauth2/">
 			website</a> has amazing documentation explaining both types of authentication flows you can obtain.
 			I decided to use the "Authorization Code Flow" and my initial code was based on this thorough
