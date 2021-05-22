@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Carro a control remoto</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload" onload="progress_bar()">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="rc_car.html" class="logo">Back to RC Car Project</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="../../index.html">Who am I?</a></li>
+							<li class="active"><a href="../../projects.html">Projects</a></li>
+							<li><a href="../../contact.html">Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/lvlarco" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/lvlarco" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>RC Car <br />
+										MVP2</h1>
+								</header>
+								<!-- Progress Bar -->
+								<h2>Project Status</h2>
+								<div class="w3-container">
+									<div class="row gtr-150 gtr-uniform">
+										<div class="col-4"><a href="rc_car_mvp1.html"><h3>MVP1</h3></a></div>
+										<div class="col-4"><a href="rc_car_mvp2.html"><h3>MVP2</h3></a></div>
+										<div class="col-4"><a href="rc_car_mvp3.html"><h3>MVP3</h3></a></div>
+									</div>
+									<div class="w3-light-grey">
+										<div id="myBar" class="w3-container w3-blue" style="height:20px;width:0%"></div>
+									</div>
+									<p id="myP">MVP<span id="demo">1</span> completed!</p>
+								</div>
+								  
+								<script>
+								function progress_bar() {
+									var elem = document.getElementById("myBar");   
+									var width = 20;
+									var id = setInterval(frame, 40);
+									function frame() {
+										if (width >= 70) {
+											clearInterval(id);
+											document.getElementById("myP").className = "w3-text-blue w3-animate-opacity";
+											document.getElementById("myP").innerHTML = "MVP2 Complete. MVP3 in Progress";
+											} 
+											else {
+												width++; 
+												elem.style.width = width + '%'; 
+												var num = width * 1 / 33.33;
+												num = num.toFixed(0)
+												document.getElementById("demo").innerHTML = num;
+												}
+										}
+								  	}
+								</script>	
+
+								<!-- Text stuff -->
+									<h2>Goals</h2>
+										<div class="col-6 col-12-small">
+											<ol class="alt">
+												<li>Programming: develop Python code to drive the back wheels and steering using Raspberry Pi</li>
+												<li>Wiring: design circuit to connect Pi to hardware, and to solder stripboard</li>
+												<li>Design & Print: use CAD to design chassis and mounts. Print parts and assemble</li>
+											</ol>
+										</div>
+									<hr />
+									<h2>Hardware</h2>
+	
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul class="alt">
+												<li>Raspberry Pi 2</li>
+												<li>2 x 3-6V DC motor</li>
+												<li>Servo motor</li>
+												<li>Rack and pinion setup</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul class="alt">
+												<li>WiPi Wireless Adapter</li>
+												<li>L293D H-bridge</li>
+												<li>4-pack AA battery holder</li>
+												<li>Rubber tires</li>
+											</ul>
+										</div>
+									</div>
+									<hr />
+									<h2>Process</h2>
+									<p>Connections and code was based and modified from <a href="https://business.tutsplus.com/tutorials/controlling-dc-motors-using-python-with-a-raspberry-pi--cms-20051">
+										envatotuts+</a> and <a href="http://roverpi.blogspot.com/2013/07/controlling-two-dc-motors-with.html">
+										Rover Pi</a><br>
+										Switch code was loosely based in <a href="http://razzpisampler.oreilly.com/ch07.html">
+										O'Reilly's Raspberry Pi Cookbook</a><br></p>
+									<h3>Testing Motion Sensor</h3>
+									<iframe class="video" src="https://youtube.com/embed/05aJGCqyBHA"></iframe>
+									<h3>MVP Finalized</h3>
+									<iframe class="video" src="https://youtube.com/embed/oSc_1rw3BFE"></iframe>
+									
+								</section>
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		
+	</body>
+</html>

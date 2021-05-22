@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Carro a control remoto</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload" onload="progress_bar()">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../../projects.html" class="logo">Back to Projects</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="../../index.html">Who am I?</a></li>
+							<li class="active"><a href="../../projects.html">Projects</a></li>
+							<li><a href="../../contact.html">Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/lvlarco" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/lvlarco" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Building a Bluetooth <br />
+										Controlled Car</h1>
+								</header>
+								<!-- Progress Bar -->
+								<h2>Project Status</h2>
+								<div class="w3-container">
+									<div class="row gtr-150 gtr-uniform">
+										<div class="col-4"><a href="rc_car_mvp1.html"><h3>MVP1</h3></a></div>
+										<div class="col-4"><a href="rc_car_mvp2.html"><h3>MVP2</h3></a></div>
+										<div class="col-4"><a href="rc_car_mvp3.html"><h3>MVP3</h3></a></div>
+									</div>
+									<div class="w3-light-grey">
+										<div id="myBar" class="w3-container w3-blue" style="height:20px;width:0%"></div>
+									</div>
+									<p id="myP">MVP<span id="demo">1</span> completed!</p>
+								</div>
+								  
+								<script>
+								function progress_bar() {
+									var elem = document.getElementById("myBar");   
+									var width = 20;
+									var id = setInterval(frame, 40);
+									function frame() {
+										if (width >= 70) {
+											clearInterval(id);
+											document.getElementById("myP").className = "w3-text-blue w3-animate-opacity";
+											document.getElementById("myP").innerHTML = "MVP2 Complete. MVP3 in Progress";
+											} 
+											else {
+												width++; 
+												elem.style.width = width + '%'; 
+												var num = width * 1 / 33.33;
+												num = num.toFixed(0)
+												document.getElementById("demo").innerHTML = num;
+												}
+										}
+								  	}
+								  </script>	
+								 
+								<!-- Text stuff -->
+									<h4><i>..if no one will buy me one, I'll make it myself</i></h4>
+										<p>I never got my remote control car. I always wanted it but my parents never 
+											bought me that <a href="https://www.google.com/search?q=tyco+scorcher&tbm=isch&source=lnms&sa=X&ved=0ahUKEwj5tJrT-d3wAhVLAp0JHR9PDhsQ_AUIwQEoAQ&biw=1280&bih=917">
+											Tyco Scorcher</a> of my dreams. Since buying my 3D printer, I've been 
+											creating projects that intertwined printing and coding, thus I saw this as my 
+											opportunity!<br />
+											The main purpose of this project is to dust off my CAD design, try new 
+											printing designs, improve my coding, and learn about hardware and bus 
+											communications.</p>
+									<hr />
+
+									
+									<h2>Skillset</h2>
+	
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul class="alt">
+												<li>CAD modeling</li>
+												<li>Python</li>
+												<li>3D Printing</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul class="alt">
+												<li>Raspberry Pi</li>
+												<li>Circuit Design</li>
+												<li>I2C Protocol</li>
+											</ul>
+										</div>
+									</div>
+									<hr />
+									<h2>Process</h2>
+										<p>I will develop this project in several MVPs, building off from the previous one, and improving my design. 
+											I'd like to design and print all car parts, and code all logics for the car. Although there are several 
+											plug-and-play circuit boards to control the car components, I will only use a Raspberry Pi.</p>
+									<hr />
+									<h2>Version Release</h2>
+									<div class="box alt">
+										<div class="row gtr-200 gtr-uniform">
+											<div class="col-6"><a href="rc_car_mvp1.html" class="image fit">
+												<div class="overlay"><div class="overlay_text">MVP1</div></div>
+												<img src="assets/mvp1.PNG" alt="" /></a></div>
+											<div class="col-6"><a href="rc_car_mvp2.html" class="image fit">
+												<div class="overlay"><div class="overlay_text">MVP2</div></div>
+												<img src="assets/mvp2.jpg" alt="" /></a></div>
+									</div> 
+								</section>
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		
+	</body>
+</html>
