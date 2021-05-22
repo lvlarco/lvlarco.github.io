@@ -1,61 +1,178 @@
 <!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-	<title>Marco's projects</title>
-	<link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-	<div class="topnav">
-		<a href="./index.html">home</a>
-		<a class="active" href="./projects.html">projects</a>
-		<a href="./contact.html">contact</a>
-	</div>
-	<div style="padding-top:3%; padding-left:10%; padding-right:10%; padding-bottom:10%">
-		<h1>what I do for fun</h1>
-		<p id="bottom_padding">Tech-oriented.<br>
-		I like 3D printing, CAD design, electronics and microcontrollers -- 
-		I combine them all</p>
-		<div class="proj_container">
-			<img src="./assets/rc_car.jpg" alt="RC Car MVP2" class="proj_img">
-			<a href="./projects/rc_car/rc_car.html">
-				<div class= "overlay">
-					<div class="overlay_text">Remote Control Car<br>
-					Building an RC car controlled via bluetooth from my phone
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="proj_container">
-			<img src="./assets/yoda_front.jpg" alt="Yoda Rubik's Cube" class="proj_img">
-			<a href="./projects/yoda_rubiks_cube/yoda.html">
-				<div class= "overlay">
-					<div class="overlay_text">Yoda Rubik's Cube<br>
-					3D printed a fully-functioning rubik's cube in the form of Yoda
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="proj_container">
-			<img src="./assets/hikes.jpg" alt="Hikes" class="proj_img">
-			<a href="./projects/hikes/hikes.html">
-				<div class= "overlay">
-					<div class="overlay_text">Hikes<br>
-					Data visualization for my recorded hikes using Pandas, Plotly and Fitbit API
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="proj_container">
-			<img src="./assets/polynomial_fit.PNG" alt="Polynomial Fit" class="proj_img">
-			<a href="./projects/polynomial_fit/polynomial_fit.html">
-				<div class= "overlay">
-					<div class="overlay_text">Polynomial Fit<br>
-					 Predict the displacement of a material sample using a polynomial least square fit. Written in Matlab
-					</div>
-				</div>
-			</a>
-		</div>				
-	</div>
-</body>
-</html>
+	<head>
+		<title>Los proyectos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Projects</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Who am I?</a></li>
+							<li class="active"><a href="projects.html">Projects</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/lvlarco" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/lvlarco" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+
+					<!-- Featured Post -->
+						<article class="post featured">
+							<header class="major">
+								<span class="date">Featured</span>
+								<h2><a href="https://hodltomars.com">Planet Orbit<br />
+									Simulation				
+								</a></h2>
+								<p>Creating a simulation of our Solar System using NASA's API. The simulation will allow
+									to predict the positioning of any planet with respect to any other celestial
+										in the SS. User will be able to select past dates as well as predictions in the 
+										future.
+								</p>
+							</header>
+							<!-- <iframe class="anim" src="images/ss_simulation.html" scrolling="yes"></iframe> -->
+							<a href="https://hodltomars.com" class="image main"><img src="images/solar_system.JPG" alt="" /></a>
+							<ul class="actions special">
+								<li><a href="https://hodltomars.com" class="button large">More Info</a></li>
+							</ul>
+						</article>
+
+					<!-- Posts -->
+						<section class="posts">
+							<!-- RC Car -->
+							<article>
+								<header>
+									<span class="date">Mechatronics</span>
+									<h2><a href="projects_details/rc_car/rc_car.html">Remote Control<br />
+										Car</a></h2>
+								</header>
+								<a href="projects_details/rc_car/rc_car.html" class="image fit"><img src="images/rc_car.jpg" alt="" /></a>
+								<p>An RC car programmedin Python using an RPi. It is able to be controlled via Bluetooth from my phone. I 
+									designed and 3D printed the steering mechanism, and programmed it from scratch. Installed a motion sensor 
+									to avoid collisions.
+								</p>
+								<ul class="actions special">
+									<li><a href="projects_details/rc_car/rc_car.html" class="button">Details</a></li>
+								</ul>
+							</article>
+							<!-- Hikes -->
+							<article>
+								<header>
+									<span class="date">Data Visualization</span>
+									<h2><a href="projects_details/hikes/hikes.html">Nerding Out <br />Hiking Data</a></h2>
+								</header>
+								<a href="projects_details/hikes/hikes.html" class="image fit"><img src="images/hikes.jpg" alt="" /></a>
+								<p>Cross-data analysis from different data sources to analyze my heart rate at different 
+									elevations while hiking. Using plot visualization tools like Plotly and matplotlib for pretty graphs!
+								</p>
+								<ul class="actions special">
+									<li><a href="projects_details/hikes/hikes.html" class="button">Details</a></li>
+								</ul>
+							</article>
+							<!-- Regression Analysis -->
+							<article>
+								<header>
+									<span class="date">Regression Analysis</span>
+									<h2><a href="projects_details/polynomial_fit/polynomial_fit.html">Polynomial Fit<br />Using Matlab</a></h2>
+								</header>
+								<a href="projects_details/polynomial_fit/polynomial_fit.html" class="image fit"><img src="images/polynomial_fit.PNG" alt="" /></a>
+								<p>Project to come up with the most optimal prediction method for the displacement of a specific material 
+									sample. Predictions included different polynomial fits. Project written entirely in Matlab.</p>
+								<ul class="actions special">
+									<li><a href="projects_details/polynomial_fit/polynomial_fit.html" class="button">Details</a></li>
+								</ul>
+							</article>
+							<article>
+								<header>
+									<span class="date">April 14, 2017</span>
+									<h2><a href="#">Tempus sed<br />
+									nulla imperdiet</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+								<ul class="actions special">
+									<li><a href="#" class="button">Full Story</a></li>
+								</ul>
+							</article>
+							<article>
+								<header>
+									<span class="date">April 11, 2017</span>
+									<h2><a href="#">Odio magna<br />
+									sed consectetur</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+								<ul class="actions special">
+									<li><a href="#" class="button">Full Story</a></li>
+								</ul>
+							</article>
+							<article>
+								<header>
+									<span class="date">April 7, 2017</span>
+									<h2><a href="#">Augue lorem<br />
+									primis vestibulum</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+								<ul class="actions special">
+									<li><a href="#" class="button">Full Story</a></li>
+								</ul>
+							</article>
+						</section>
+
+					<!-- Footer -->
+						<footer>
+							<div class="pagination">
+								<!--<a href="#" class="previous">Prev</a>-->
+								<a href="#" class="page active">1</a>
+								<a href="#" class="page">2</a>
+								<a href="#" class="page">3</a>
+								<span class="extra">&hellip;</span>
+								<a href="#" class="page">8</a>
+								<a href="#" class="page">9</a>
+								<a href="#" class="page">10</a>
+								<a href="#" class="next">Next</a>
+							</div>
+						</footer>
+
+				</div>
+				
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
