@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Hace calor en Marte?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../../projects.html" class="logo">Back to Projects</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="../../index.html">Who am I?</a></li>
+							<li class="active"><a href="../../projects.html">Projects</a></li>
+							<li><a href="../../contact.html">Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/lvlarco" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/lvlarco" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Building two UIs to<br />
+										display Mars weather</h1>
+								</header>
+																 
+								<!-- Text stuff -->
+									<h4><i>...a simple yet complex project. Requires a quite diverse skillset</i></h4>
+										<p>One of the most fun projects I have worked on. What I thought would be a simple 
+											project involving only some API requests and data analysis became an extensive 
+											idea that required me to get a RPi touchscreen, learn Flask app development, HTML/CSS, and using Google's 
+											app engine. I even hired an artist friend to desing my website's background
+										</p>
+									<hr />
+
+									
+									<h2>Skillset</h2>
+	
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul class="alt">
+												<li>API requests</li>
+												<li>Flask</li>
+												<li>Raspberry Pi</li>
+												<li>Python</li>
+												<li>Data analysis</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul class="alt">
+												<li>HTML5</li>
+												<li>CSS</li>
+												<li>Responsive website design</li>
+												<li>Google App Engine</li>
+												<li>Some artistic side :)</li>
+											</ul>
+										</div>
+									</div>
+									<hr />
+									<h2>Process</h2>
+										<p>The project is divided into three parts. Starting with the data gathering, I used different 
+											data sources to collect information from Mars rovers. One of the main issues is that live 
+											data is basically impossible due to the bandwidth of sending back the information. Therefore, 
+											there will always be a delay in relay information - which can be from days to months. The second 
+											and third parts of the projects are the display of the information. I originally thought of 
+											only creating a Python-based GUI using an RPi's touchscreen display. However, the idea evolved 
+											into also creating a website display the most up-to-date information.
+										</p>
+										<h3>Accessing the Data</h3>
+										
+											<div class="col-6 col-12-small">
+												<ol class="alt">
+													<li><a href="https://play.google.com/store/apps/details?id=com.arlabsmobile.altimeterfree&hl=en_US">
+														Accurate Altimeter</a></li>
+													<li><a href="https://play.google.com/store/apps/details?id=com.fitbit.FitbitMobile&hl=en_US">
+														Fitbit App</a></li>
+												</ol>
+												
+											</div>
+											<p>I will be using the two apps above as my data sources. The altimeter app produces 
+												a CSV file that can be parsed using Python's pandas package. For the 
+												Fitbit app, I will be creating an account and accessing their API.
+											</p>
+											<h2>Accurate Altimeter</h2>
+											<p>This is a pretty good app that allows to measure your current altitude at 
+												any moment. It has the capability to record continuously and set them up 
+												at different time steps. You can also set the triangulization method to 
+												derive your altitude from the internet or use your phone's GPS instead. 
+												This is really helpful for those remote hikes where internet is spotty.
+												However, my favorite feature is the ability to export your history to a 
+												CSV and its compatibilty with Google Drive. This is my main method to 
+												download the data without requiring to access the app's API.</p>
+											<h2>Fitbit</h2>
+											<p>Obtaining data from Fitbit is trickier. There is an option to download a CSV file from Fitbit's
+												online account, but the file contains only a mere summary. Instead, their
+											<a href="https://dev.fitbit.com/build/reference/web-api/activity/#activity-time-series"><em>intraday time series</em></a>
+												boasts a lot more options, allowing to extract data at different time steps for a wider category
+												of activities. To do so, we'll need to access Fitbit's API.</p>
+											<p>I've split this walkthrough in 3 main steps:</p>
+											<ol>
+												<li>Creating and registering an application</li>
+											<p>First, Fitbit requires to create and register an application on their developer's site.
+												This can be done by simply filling out the application on this <a href="https://dev.fitbit.com/apps/new"> link</a>.
+												Make sure you select "Personal" under the "OAuth2.0 Application Type" field. This allows to request any
+												intraday time series without any additional access approvals. However, by selecting this field, your
+												application will be limited to pulling personal data only.
+											</p>
+												<li>Authentication and authorization token</li>
+											<p>Fitbit has upgraded their authentication requirements to OAuth2.0 only. Their <a href="https://dev.fitbit.com/build/reference/web-api/oauth2/">
+												website</a> has amazing documentation explaining both types of authentication flows you can obtain.
+												I decided to use the "Authorization Code Flow" and my initial code was based on this thorough
+												<a href="http://pdwhomeautomation.blogspot.com/2016/01/fitbit-api-access-using-oauth20-and.html">post</a>
+												by Paul's Geek Dad Blog.<br>
+												However, I found his authorization code request a bit restrictive, thus I refactored using Python's
+												<a href="http://docs.python-requests.org/en/master/"><em>Requests</em></a> package instead.
+											</p>
+												<li>Requesting data</li>
+											<p>To call the intraday time series I downloaded this <a href="https://github.com/orcasgit/python-fitbit">
+												Fitbit API client implementation package</a> created by <em>orcasgit</em>. To install the package, clone
+												the github repo:
+												<pre><code>git clone git@github.com:orcasgit/python-fitbit.git</code></pre></p>
+												</ol>
+									<hr />
+									<h2>Graphs</h2>
+									<p>Check my graphs and data in my <a href="https://plot.ly/~lvlarco">Plotly dashboard</a>.<br />
+										All my graphs are interactive! You can hide each hike by clicking on it or double-click 
+										on one to select it.</p>
+									
+									<div class="plotly" align="center">
+										<iframe class="anim" src="//plot.ly/~lvlarco/88.embed"
+										width="950" height="500" frameborder="0" scrolling="no"></iframe>
+									</div>
+								</section>
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		
+	</body>
+</html>
